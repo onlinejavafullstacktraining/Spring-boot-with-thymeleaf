@@ -1,14 +1,14 @@
-package com.internet.service;
+package com.spring.thymeleaf.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.internet.autobean.PersonAutoBean;
-import com.internet.database.UserDao;
-import com.internet.model.Address;
-import com.internet.model.Contact;
-import com.internet.model.Login;
-import com.internet.model.Person;
+import com.spring.thymeleaf.autobean.PersonAutoBean;
+import com.spring.thymeleaf.database.UserDao;
+import com.spring.thymeleaf.model.Address;
+import com.spring.thymeleaf.model.Contact;
+import com.spring.thymeleaf.model.Login;
+import com.spring.thymeleaf.model.Person;
 
 @Service
 public class UserServiceImpl implements UserService {

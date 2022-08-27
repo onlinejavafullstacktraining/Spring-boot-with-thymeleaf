@@ -1,4 +1,4 @@
-package com.internet.autobean;
+package com.spring.thymeleaf.autobean;
 
 public class PersonAutoBean {
 	private String username;

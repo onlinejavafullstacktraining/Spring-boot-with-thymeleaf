@@ -1,4 +1,4 @@
-package com.internet.database;
+package com.spring.thymeleaf.database;
 
 import java.io.Serializable;
 import java.util.List;
@@ -9,10 +9,10 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.internet.model.Address;
-import com.internet.model.Contact;
-import com.internet.model.Login;
-import com.internet.model.Person;
+import com.spring.thymeleaf.model.Address;
+import com.spring.thymeleaf.model.Contact;
+import com.spring.thymeleaf.model.Login;
+import com.spring.thymeleaf.model.Person;
 @Repository
 @Transactional
 public class UserDaoImpl implements UserDao {

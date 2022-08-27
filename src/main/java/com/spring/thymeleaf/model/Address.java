@@ -1,4 +1,4 @@
-package com.internet.model;
+package com.spring.thymeleaf.model;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package com.internet.controller;
+package com.spring.thymeleaf.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.internet.autobean.PersonAutoBean;
-import com.internet.model.Login;
-import com.internet.service.UserService;
+import com.spring.thymeleaf.autobean.PersonAutoBean;
+import com.spring.thymeleaf.model.Login;
+import com.spring.thymeleaf.service.UserService;
 
 @Controller
 public class UserController {

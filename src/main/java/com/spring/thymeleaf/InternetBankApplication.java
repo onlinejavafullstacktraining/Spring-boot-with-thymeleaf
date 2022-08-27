@@ -1,4 +1,4 @@
-package com.internet;
+package com.spring.thymeleaf;
 
 import java.io.IOException;
 import java.util.Properties;

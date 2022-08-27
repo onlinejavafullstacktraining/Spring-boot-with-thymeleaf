@@ -8,13 +8,13 @@
 		<version>2.5.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.internet</groupId>
-	<artifactId>InternetBank</artifactId>
+	<groupId>com.spring</groupId>
+	<artifactId>thymeleaf</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>InternetBank</name>
-	<description>Online Internet Bank Application</description>
+	<name>spring-with-thymeleaf</name>
 	<properties>
 		<java.version>11</java.version>
+		<maven.test.skip>true</maven.test.skip>
 	</properties>
 	<dependencies>
 		<dependency>

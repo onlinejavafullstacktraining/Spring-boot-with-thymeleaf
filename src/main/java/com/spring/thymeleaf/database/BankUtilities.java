@@ -1,8 +1,8 @@
-package com.internet.database;
+package com.spring.thymeleaf.database;
 
 import java.util.List;
 
-import com.internet.model.Login;
+import com.spring.thymeleaf.model.Login;
 
 public class BankUtilities {
 
