@@ -1,0 +1,40 @@
+name: Deploy Container image to aws ECR
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: main
+    # Most GitHub events are triggered by more than one type of activity 
+    # the event for the release resource is triggered when a release is 
+    # published, unpublished, created, edited, deleted, or prereleased
+  release: 
+    types: [published, created, edited]
+  workflow_call:
+  # When using the workflow_call keyword, 
+  # you can optionally specify inputs that are passed to the called workflow from the caller workflow
+    inputs:
+      username:
+        description: 'A username passed from the caller workflow'
+        default: 'john-doe'
+        required: false
+        type: string
+jobs: 
+    aws_ecr_dockerfile_deploy:
+        runs-on: ubuntu-latest
+        name: AWS ecr deploy- A job that deploys a image container using a aws_ecr_dockerfile_deploy
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+            - name: Deploy container image to AWS ECR
+              uses: nyakaz73/aws-ecr-deploy@v0.08
+              id: deploy 
+              with:
+                access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+                region: ${{ secrets.AWS_REGION }}
+                aws_account_id: ${{ secrets.AWS_ACCOUNT_ID }}
+                image_name: myapp
+
+            - name: Get the output status
+              run: echo "${{ steps.deploy.outputs.status }}"
+
